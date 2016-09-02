@@ -79,7 +79,7 @@ public class MyFrame extends JFrame {
      * Creates the label that will contain the main title of the program
      */
 	public void createTitleLabel(){
-		JLabel title = new JLabel("Welcome to Barak's Ultimate Converter!");
+		JLabel title = new JLabel("Welcome to The Ultimate Unit Converter!");
 		title.setFont(new Font("Serif", Font.PLAIN, 24));
 		titlePanel = new JPanel();
 		titlePanel.add(title);

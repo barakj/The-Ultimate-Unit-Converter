@@ -78,7 +78,7 @@ public class MyFrame extends JFrame {
 	/**
      * Creates the label that will contain the main title of the program
      */
-	public void createTitleLabel(){
+	private void createTitleLabel(){
 		JLabel title = new JLabel("Welcome to The Ultimate Unit Converter!");
 		title.setFont(new Font("Serif", Font.PLAIN, 24));
 		titlePanel = new JPanel();
@@ -88,7 +88,7 @@ public class MyFrame extends JFrame {
 	/**
      * Initializes comboBox button for step 1 - categories
      */
-	public void initializeStep1Buttons(){
+	private void initializeStep1Buttons(){
 		type = new JComboBox<String>();
 		type.addItem("");
 		type.addItem("Distance");
@@ -101,7 +101,7 @@ public class MyFrame extends JFrame {
 	/**
      * Creates the panel that will contain step 1 (the category choice)
      */
-	public void createStep1Panel(){
+	private void createStep1Panel(){
 		step1Panel = new JPanel();
         JLabel choice = new JLabel("Choose Type of Conversion: ");
         step1Panel.add(choice);
@@ -113,7 +113,7 @@ public class MyFrame extends JFrame {
 	/**
      * Initializes step 3 buttons (convert and switch)
      */
-	public void initializeStep3Buttons(){
+	private void initializeStep3Buttons(){
 		from = new JLabel("");
 		to = new JLabel("");
 		submit = new JButton("Convert !");
@@ -125,7 +125,7 @@ public class MyFrame extends JFrame {
 	/**
      * Creates the panel that will contain step 3 (the conversion step)
      */
-	public void createStep3Panel(){
+	private void createStep3Panel(){
 		step3Panel = new JPanel();
 		step3Panel.setLayout(new GridLayout(3,1));
 		JPanel labelPanel = new JPanel();
@@ -151,7 +151,7 @@ public class MyFrame extends JFrame {
 	/**
      * Creates the main panel of the frame and adds it to the frame
      */
-	public void createMainPanel(){
+	private void createMainPanel(){
 		JPanel mainPanel = new JPanel();
 		mainPanel.setLayout(new GridLayout(4,1));
 		mainPanel.add(titlePanel);
@@ -324,7 +324,7 @@ public class MyFrame extends JFrame {
 	/**
 	 * Creates panel for step 2 for temperature type conversions
      */
-	public JPanel createTempstep2Panel(){
+	private JPanel createTempstep2Panel(){
 		cTof.setText("Celsius/Fahrenheit");
 		cTof.addActionListener(new RadioButtonListener());
 		cTok.setText("Celsius/Kelvin");
@@ -345,7 +345,7 @@ public class MyFrame extends JFrame {
 	/**
 	 * Creates panel for step 2 for weight type conversions
      */
-	public JPanel createWeightstep2Panel(){
+	private JPanel createWeightstep2Panel(){
 		kgToLbs.setText("Kg/Lbs");
 		kgToLbs.addActionListener(new RadioButtonListener());
 		kgToOz.setText("Kg/Oz");
@@ -366,7 +366,7 @@ public class MyFrame extends JFrame {
 	/**
 	 * Creates panel for step 2 for currency type conversions
      */
-	public JPanel createCurrencystep2Panel(){
+	private JPanel createCurrencystep2Panel(){
 		TitledBorder titled;
 		titled = BorderFactory.createTitledBorder("Step 2");
 		cadToUsd.setText("CAD/USD");
@@ -388,7 +388,7 @@ public class MyFrame extends JFrame {
 	/**
 	 * Deletes the current frame and repaints it
      */
-	public void updateFrame(){
+	private void updateFrame(){
 		this.getContentPane().removeAll();
 		JPanel mainPanel = new JPanel();
 		mainPanel.setLayout(new GridLayout(4,1));
@@ -407,7 +407,7 @@ public class MyFrame extends JFrame {
 	/**
 	 * Initializes all step 2 radio buttons and groups them together
      */
-	public void initializeStep2Buttons(){
+	private void initializeStep2Buttons(){
 		cmToInch = new JRadioButton();
 		kmToMile = new JRadioButton();
 		kgToLbs = new JRadioButton();

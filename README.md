@@ -1,5 +1,6 @@
 # The-Ultimate-Unit-Converter
-A fun unit conversion program to assists people at time of need
+A fun unit conversion program to assists people at time of need.
+Built using Eclipse.
 
 Many people struggle with different unit conversions. It could be during shopping, school or when travelling. 
 I created a program that allows different unit conversions in a very simple and interactive way.
